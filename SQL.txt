@@ -1,0 +1,54 @@
+SELECT * FROM fast_api_study_info.user
+
+SELECT				- выбрать
+*				- фильтр (все)
+FROM				- из
+fast_api_study_info		- имя БД
+user				- название таблицы
+
+
+
+INSERT INTO fast_api_study_info.user (name, age, email, description)
+VALUES ('Roman', 34, 'email@gmail.com', 'Best friend')
+
+INSERT 				- вставить
+INTO 				- в
+fast_api_study_info		- имя БД
+user 				- название таблицы
+(name, age, email, description)	- имена полей, которые будут вставлены
+VALUES 				- значения
+('Roman', 34, 'email@gmail.com', 'Best friend') - значения, которые будут вставлены
+
+
+
+
+INSERT INTO fast_api_study_info.user (name, age)
+VALUES ('Hanna', 24);
+
+
+____________________________________________________________________________________
+Создание новой таблицы, company
+
+ALTER TABLE IF EXISTS fast_api_study_info.company
+    ADD COLUMN id smallserial NOT NULL;
+
+ALTER TABLE IF EXISTS fast_api_study_info.company
+    ADD COLUMN name character varying(150) NOT NULL;
+
+ALTER TABLE IF EXISTS fast_api_study_info.company
+    ADD COLUMN count_of_employes integer NOT NULL;
+ALTER TABLE IF EXISTS fast_api_study_info.company
+    ADD PRIMARY KEY (id);
+
+
+SELECT * FROM fast_api_study_info.company;
+
+INSERT INTO fast_api_study_info.company (name, count_of_employes)
+VALUES ('Kyivenergo',2500)
+
+
+______________________________________________________________________________________
+
+
+Связь между таблицами через "Foreign key"
+
