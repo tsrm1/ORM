@@ -1,9 +1,9 @@
 SELECT * FROM fast_api_study_info.user
 
 SELECT				- выбрать
-*				- фильтр (все)
+*				    - фильтр (все)
 FROM				- из
-fast_api_study_info		- имя БД
+fast_api_study_info	- имя БД
 user				- название таблицы
 
 
@@ -11,12 +11,12 @@ user				- название таблицы
 INSERT INTO fast_api_study_info.user (name, age, email, description)
 VALUES ('Roman', 34, 'email@gmail.com', 'Best friend')
 
-INSERT 				- вставить
-INTO 				- в
-fast_api_study_info		- имя БД
-user 				- название таблицы
+INSERT 				            - вставить
+INTO 				            - в
+fast_api_study_info	            - имя БД
+user 				            - название таблицы
 (name, age, email, description)	- имена полей, которые будут вставлены
-VALUES 				- значения
+VALUES 				            - значения
 ('Roman', 34, 'email@gmail.com', 'Best friend') - значения, которые будут вставлены
 
 

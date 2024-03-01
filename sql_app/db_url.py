@@ -1,0 +1,1 @@
+SQLALCHEMY_DATABASE_URL = "postgresql://postgres:Katran4ik@localhost/Fast_API_study"
